@@ -14,3 +14,6 @@ make
 sudo make install
 
 echo 'ZSH installed with success!'
+echo "Executing zsh..."
+
+exec $(which zsh)
