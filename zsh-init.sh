@@ -13,11 +13,16 @@ cd zsh-5.2
 make
 sudo make install
 
+chsh $(which zsh)
+
 echo 'ZSH installed with success!'
-echo "Executing zsh..."
 
-exec $(which zsh)
-
-# Deleting files
+# Deleting instalation files
 rm $link
 rm -rf zsh-5.2
+
+echo 'Now let us configure zsh'
+exec zsh
+
+# Downloading and installing oh my Zsh
+
