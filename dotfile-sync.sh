@@ -4,5 +4,5 @@
 echo 'Type the locating of your dotfiles: '
 read link
 
-wget -q0- link
+git clone $link
 
