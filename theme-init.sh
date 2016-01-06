@@ -9,10 +9,12 @@ alias solarize ~/.solarized/solarize.sh
 echo 'Choose your version:'
 echo '1. Light'
 echo '2. Dark'
-read version
+read VERSION
 
-if [ $version -eq 1 ] ; then
-	echo 1
+if [ $VERSION -eq 1 ] ; then
+	$(solarize light)
+	echo 'Solarized Light theme activated!'
 elif
-	echo 2
+	$(solarize dark)
+	echo 'Solarized Dark Theme activated!'
 fi
