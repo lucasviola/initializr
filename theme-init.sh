@@ -1,8 +1,8 @@
 # Downloading and configuring solarized theme
 
 git clone https://github.com/gmodarelli/solarize.git ~/.solarized
-chmod +x ~/.solarized/solarized.sh
-alias solarize ~/.solarized/solarize.sh
+chmod +x ~/.solarized/solarize.sh
+alias solarize=~/.solarized/solarize.sh
 
 # Activating it
 
@@ -14,7 +14,7 @@ read VERSION
 if [ $VERSION -eq 1 ] ; then
 	$(solarize light)
 	echo 'Solarized Light theme activated!'
-elif
+else
 	$(solarize dark)
 	echo 'Solarized Dark Theme activated!'
 fi
