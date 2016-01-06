@@ -25,4 +25,6 @@ echo 'Now let us configure zsh'
 exec zsh
 
 # Downloading and installing oh my Zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 
