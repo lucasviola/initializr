@@ -17,3 +17,7 @@ echo 'ZSH installed with success!'
 echo "Executing zsh..."
 
 exec $(which zsh)
+
+# Deleting files
+rm $link
+rm -rf zsh-5.2
