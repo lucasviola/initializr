@@ -17,3 +17,4 @@ mkdir -p $OLDDIR
 for FILE in $FILES; do
 	cp ~/.$FILE ~/$OLDDIR/.$FILE
     ln -s $DIR/$FILE ~/.$FILE
+done
