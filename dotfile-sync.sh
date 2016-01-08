@@ -1,7 +1,7 @@
 # Synchronizing your dotfiles
 
 # Downloading dotfiles
-echo 'Type the locating of your dotfiles: '
+echo 'Type the location of your dotfiles: '
 read link
 
 git clone $link
@@ -15,6 +15,6 @@ echo "Backing up old dotfiles..."
 mkdir -p $OLDDIR
 
 for FILE in $FILES; do
-	cp ~/.$FILE ~/$OLDDIR/.$FILE
+    cp ~/$(find -name .$FILE) ~/$OLDDIR/.$FILE
     ln -s $DIR/$FILE ~/.$FILE
 done
