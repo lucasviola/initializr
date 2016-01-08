@@ -8,7 +8,7 @@ link=http://downloads.sourceforge.net/project/zsh/zsh/5.2/zsh-5.2.tar.gz\?r\=htt
 wget -qO- $link | tar xvz -C $PWD
 
 # Installing zsh
-cd zsh-5.2
+cd zsh*
 ./configure
 make
 sudo make install
@@ -21,7 +21,7 @@ echo 'ZSH installed with success!'
 rm $link
 rm -rf zsh-5.2
 
-echo 'Now let us configure zsh'
+echo 'Now let us execute zsh'
 exec zsh
 
 # Downloading and installing oh my Zsh
