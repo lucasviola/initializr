@@ -11,3 +11,9 @@ if [ -f ~/.vimrc ]; then
 	echo 'filetype plugin indent on' >> ~/.vimrc
 fi
 
+# Installing NERDTree
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+
+# This line makes NERDTree start automatically when VIM starts up
+echo 'autocmd vimenter * NERDTree' >> ~/.vimrc
