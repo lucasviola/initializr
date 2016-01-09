@@ -4,17 +4,13 @@
 echo 'Type the remote repo of your dotfiles: '
 read LINK
 
-git clone $LINK
+git clone $LINK ~/dotfiles
 
 # Synchronize symbolic links
-DIR=$PWD/dotfiles
-OLDDIR=$PWD/DOTFILES_BAK
-FILES="bashrc vimrc vim zshrc oh-my-zsh"
-
-echo "Backing up old dotfiles..."
-mkdir -p $OLDDIR
+DIR=~/dotfiles
+FILES="bashrc vimrc zshrc"
 
 for FILE in $FILES; do
-    cp ~/$(find -name .$FILE) ~/$OLDDIR/.$FILE
-    ln -s $DIR/$FILE ~/.$FILE
+    ln -s $(find ~/dotfiles/* -name $FILE.*) ~/.$FILE
 done
+
