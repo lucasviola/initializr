@@ -1,10 +1,10 @@
 # Synchronizing your dotfiles
 
 # Downloading dotfiles
-echo 'Type the location of your dotfiles: '
-read link
+echo 'Type the remote repo of your dotfiles: '
+read LINK
 
-git clone $link
+git clone $LINK
 
 # Synchronize symbolic links
 DIR=$PWD/dotfiles
