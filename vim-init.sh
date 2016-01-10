@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Downloading pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \

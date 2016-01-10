@@ -1,3 +1,4 @@
+#!/bin/bash
 # Synchronizing your dotfiles
 
 # Downloading dotfiles

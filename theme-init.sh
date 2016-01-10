@@ -1,3 +1,4 @@
+#!/bin/bash
 # Downloading and configuring solarized theme
 
 git clone https://github.com/gmodarelli/solarize.git ~/.solarized
