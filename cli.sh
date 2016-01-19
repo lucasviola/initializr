@@ -23,17 +23,17 @@ Usage: $(basename "$0") [-h]
 VERSION="0.0.1"
 
 case "$1" in
-	-h)
+	-h | --help)
 		echo "$USAGE_MESSAGE"
 		exit 0
 	;;
 
-	-v)
+	-v | --help)
 		echo "$VERSION"
 		exit 0
 	;;
 
-	-S)
+	-S | --shell)
 		echo "Initiating shell..."
 	    exit 0
 	;;	
