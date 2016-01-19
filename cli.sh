@@ -6,7 +6,7 @@
 #
 
 USAGE_MESSAGE="
-	Usage $0 [-h]
+Usage: $(basename "$0") [-h]
 
 	-h : Shows this screen and leaves
 	-V : Shows version
@@ -30,7 +30,13 @@ case "$1" in
 
 	-v)
 		echo "$VERSION"
+		exit 0
 	;;
+
+	-S)
+		echo "Initiating shell..."
+	    exit 0
+	;;	
 
 	*)
 		echo "Invalid Option"
