@@ -38,6 +38,21 @@ case "$1" in
 	    exit 0
 	;;	
 
+	-t | --theme)
+		echo "Initiating theme..."
+		exit 0
+	;;
+	
+	-s | --sync)
+		echo "Synchronizing dotfiles..."
+		exit 0
+	;;
+
+	-av | --apt-vim)
+		echo "Installing plugins"
+		exit 0
+	;;		
+
 	*)
 		echo "Invalid Option"
 	;;
