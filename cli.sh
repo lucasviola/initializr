@@ -22,16 +22,19 @@ USAGE_MESSAGE="
 
 VERSION="0.0.1"
 
-# Treats command line options
+case "$1" in
+	-h)
+		echo "$USAGE_MESSAGE"
+		exit 0
+	;;
 
-if test "$1" = "-h"
-then
-	echo "$USAGE_MESSAGE"
-	exit 0
+	-v)
+		echo "$VERSION"
+	;;
 
-elif test "$1" = "-V"
-then
-	echo "$VERSION"
-fi
+	*)
+		echo "Invalid Option"
+	;;
+esac
 
 
