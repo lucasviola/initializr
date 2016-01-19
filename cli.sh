@@ -35,16 +35,27 @@ case "$1" in
 
 	-S | --shell)
 		echo "Initiating shell..."
-	    exit 0
+		
+		if test "$2" = "zsh"
+		then
+			. zsh-init.sh
+	    
+		elif test "$2" = "fish"
+		then
+			echo "Not yet implemented..."
+		fi
+		exit 0
 	;;	
 
 	-t | --theme)
 		echo "Initiating theme..."
+		. theme-init.sh
 		exit 0
 	;;
 	
 	-s | --sync)
 		echo "Synchronizing dotfiles..."
+		. dotfile-sync.sh
 		exit 0
 	;;
 
