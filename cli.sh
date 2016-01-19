@@ -10,6 +10,14 @@ USAGE_MESSAGE="
 
 	-h : Shows this screen and leaves
 	-V : Shows version
+
+	[-S | --shell] <shell> : Initiates Shell. Options available:
+		- ZSH
+		- Fish
+	[-t | --theme] <theme> : Initiates theme. Options available:
+		- Solarized
+	[-s | --sync] <dotfile> : Synchronizes dotfile.
+	[--apt-vim] <plugin-name> : Installs VIM plugin.
 "
 
 VERSION="0.0.1"
